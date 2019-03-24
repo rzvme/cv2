@@ -7,7 +7,7 @@ Each new visitor generates an UUID and receives a random name via [https://rando
 The name is used to send notifications via Slack with the user's actions on the page.
 
 ## Live version
-You can view this app running on http://cv.ohnoes.ro
+You can view this app running on http://cvrgrigoras.azurewebsites.net
 
 ## Getting started
 To run this, you will need three Environment Variables. You can run this locally by creating a .env file in the root with the following info:
