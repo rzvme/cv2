@@ -11,7 +11,12 @@ function cv() {
                     delivering high quality results and using my skills to enact positive change.",
         experience: [
             {
-                startTime: "March 2018", endTime: "Present", jobTitle: "Senior Cloud Engineer", jobCompany: "Honeywell",
+                startTime: "June 2019", endTime: "Present", jobTitle: "Cloud Architect", jobCompany: "UiPath",
+                jobDescription: "Participated in the design, development and maintenance of UiPath Cloud Products and internal tools. Directly involved in the effort to maintain existing products in the major cloud marketplaces (Azure, AWS, GCP) as well as push new products to various public and gov clouds. Involved in designing and implementin various projects related to cloud governance, cost reduction and security."
+
+            },
+            {
+                startTime: "March 2018", endTime: "June 2019", jobTitle: "Senior Cloud Engineer", jobCompany: "Honeywell",
                 jobDescription: "Performed constant evaluations of the existing Honeywell services architecture hosted in the cloud to make sure they are operating in a cost efficient and streamlined manner while also migrating existing services to newer cloud services and offerings. Participated in formulating the architecture for the new features being developed for Honeywell services. Ensured that new features are developed, tested and shipped in a timely fashion by constantly reviewing and streamlining the CI/DI process. Ensured the Honeywell services are provisioned with enough capacity to handle spikes in workload. Reviewed existing instrumentation and alerts for Honeywell services and ensured new services and features are also properly instrumented and robust alerts are put in place to monitor the availability and health of these services."
 
             },
