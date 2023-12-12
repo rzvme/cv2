@@ -56,7 +56,7 @@ stages:
             inlineScript: |
               az account set --subscription bf9ff59d-dd94-4d38-876d-757734ea196d
               az aks get-credentials --resource-group Infrastructure-AKS-RG --name Infrastructure-AKS-Cluster
-              kubectl create namespace rzvmecv
+              kubectl create namespace cvrzv
               $imageTag = $(tag)
               Write-Host "imageTag: $imageTag"
               (Get-Content deployment.yaml).Replace('zzzz', $imageTag) | Set-Content deployment.yaml
