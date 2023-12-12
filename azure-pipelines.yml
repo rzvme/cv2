@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'CloudInsightACR'
+  dockerRegistryServiceConnection: 'CloudInsightACRSP'
   imageRepository: 'rzvmecv'
   containerRegistry: 'infrastructureaksclusteracr.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
