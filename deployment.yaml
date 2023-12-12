@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: ltfcpwercrt
-        image: cvregikstry.azurecr.io/rzvmecv:159
+        image: cvregikstry.azurecr.io/rzvmecv:160
 
 ---
 
@@ -45,7 +45,8 @@ metadata:
     kubernetes.io/ingress.class: azure/application-gateway
 spec:
   rules:
-  - http:
+  - host: razvanvalentingrigoras.com  
+    http:
       paths:
       - path: /
         backend:

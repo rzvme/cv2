@@ -1,0 +1,25 @@
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: rzvcv
+  namespace: rzvmecv
+  annotations:
+    kubernetes.io/ingress.class: azure/application-gateway
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  tls:
+  - hosts:
+    - razvanvalentingrigoras.com
+    secretName: example-issuer-account-key
+  rules:
+  - host: razvanvalentingrigoras.com  
+    http:
+      paths:
+      - path: /
+        backend:
+          service:
+            name: rzvcv
+            port:
+              number: 3000
+        pathType: Exact

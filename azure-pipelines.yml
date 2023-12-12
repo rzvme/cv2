@@ -11,6 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'CloudInsightACRSP'
+  armAKSServiceConnection: 'CloudInsightAKSRGSP'
   imageRepository: 'rzvmecv'
   containerRegistry: 'infrastructureaksclusteracr.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
@@ -37,3 +38,26 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+
+- stage: Deploy
+  displayName: DeployContainerImage
+  dependsOn: [Build]
+  jobs:
+    - job: Deploy
+      displayName: Deploy
+      pool:
+        vmImage: $(vmImage)
+      steps:
+        - task: AzureCLI@2
+          inputs:
+            azureSubscription: $(armAKSServiceConnection)
+            scriptType: 'pscore' 
+            scriptLocation: 'inlineScript' 
+            inlineScript: |
+              az account set --subscription bf9ff59d-dd94-4d38-876d-757734ea196d
+              az aks get-credentials --resource-group Infrastructure-AKS-RG --name Infrastructure-AKS-Cluster
+              kubectl create namespace rzvmecv
+              kubectl apply -f deployment.yaml
+              kubectl apply -f certmanager.yml
+              Start-Sleep -s 200
+              kubectl apply -f ingress.yaml
