@@ -46,7 +46,7 @@ stages:
     - job: Deploy
       displayName: Deploy
       pool:
-        vmImage: $(vmImage)
+        vmImage: $(vmImageName)
       steps:
         - task: AzureCLI@2
           inputs:
@@ -57,6 +57,9 @@ stages:
               az account set --subscription bf9ff59d-dd94-4d38-876d-757734ea196d
               az aks get-credentials --resource-group Infrastructure-AKS-RG --name Infrastructure-AKS-Cluster
               kubectl create namespace rzvmecv
+              $imageTag = $(tag)
+              Write-Host "imageTag: $imageTag"
+              (Get-Content deployment.yaml).Replace('zzzz', $imageTag) | Set-Content deployment.yaml
               kubectl apply -f deployment.yaml
               kubectl apply -f certmanager.yml
               Start-Sleep -s 200

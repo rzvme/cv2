@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: ltfcpwercrt
-        image: cvregikstry.azurecr.io/rzvmecv:160
+        image: infrastructureaksclusteracr.azurecr.io/rzvmecv:zzzz
 
 ---
 
