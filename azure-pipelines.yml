@@ -61,6 +61,7 @@ stages:
               Write-Host "imageTag: $imageTag"
               (Get-Content deployment.yaml).Replace('zzzz', $imageTag) | Set-Content deployment.yaml
               kubectl apply -f deployment.yaml
+              Start-Sleep -s 200
               kubectl apply -f certmanager.yml
               Start-Sleep -s 200
               kubectl apply -f ingress.yaml
