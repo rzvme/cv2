@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
       - name: ltfcpwercrt
-        image: infrastructureaksclusteracr.azurecr.io/rzvmecv:zzzz
+        #image: infrastructureaksclusteracr.azurecr.io/rzvmecv:zzzz
+        image: thorgate.local:5000/cv:latest
 
 ---
 
