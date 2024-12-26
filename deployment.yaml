@@ -16,7 +16,7 @@ spec:
         app: rzvcv
     spec:
       containers:
-      - name: ltfcpwercrt
+      - name: rzvcvctn
         image: thorgate.local:5000/cv:latest
         ports:
         - containerPort: 3000
