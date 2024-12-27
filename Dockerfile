@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:23.5-bookworm
 
 # Create app directory
 WORKDIR /usr/src/app
