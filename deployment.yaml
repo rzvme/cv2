@@ -36,11 +36,11 @@ metadata:
 spec:
   selector:
     app: rzvcv
-  type: LoadBalancer
+  type: ClusterIP  # Change to ClusterIP as you're using Ingress
   ports:
   - protocol: TCP
-    port: 3000
-    targetPort: 3000
+    port: 80       # Change to standard HTTP port
+    targetPort: 3000  # Keep targeting your app's port
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -48,7 +48,8 @@ metadata:
   name: rzvcv-ingress
   namespace: cvrzv
   annotations:
-    kubernetes.io/ingress.class: nginx
+    # Change this to traefik if you're using Traefik
+    kubernetes.io/ingress.class: traefik
 spec:
   rules:
   - host: razvanvalentingrigoras.com
