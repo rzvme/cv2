@@ -62,3 +62,13 @@ spec:
             name: rzvcv
             port:
               number: 80
+  - host: razvangrigoras.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: rzvcv
+            port:
+              number: 80
