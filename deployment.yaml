@@ -48,9 +48,16 @@ metadata:
   name: rzvcv-ingress
   namespace: cvrzv
   annotations:
-    # Change this to traefik if you're using Traefik
     kubernetes.io/ingress.class: traefik
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"  # Reference to your ClusterIssuer
 spec:
+  tls:
+  - hosts:
+    - razvanvalentingrigoras.com
+    secretName: razvanvalentingrigoras-tls
+  - hosts:
+    - razvangrigoras.com
+    secretName: razvangrigoras-tls
   rules:
   - host: razvanvalentingrigoras.com
     http:
