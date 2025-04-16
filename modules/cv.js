@@ -39,14 +39,9 @@ function cv() {
                     a great team worker and an emphatic leader with experience in setting the team up for success by understanding \
                     individual needs and offering the proper help with long term positive effects. Fluent in English and \
                     Romanian. Beginner in French and German.",
-        techSkills: "Highly experienced with the Microsoft Azure PaaS offering - <b>Cloud Services</b>, <b>Azure Service Fabric</b>, <b>Azure Service Bus</b>, <b>Azure Redis Cache etc. </b>\
-                    <br>A strong  web development background with <b>ASP.NET</b> as well as open-source with <b>Node.js</b>  in both Full-Stack \
-                    and decoupled approaches. Heavily focused on the microservices architecture approach with <b>Node.js</b>                    and <b>Express</b>  as the server-side technology for building <b>RESTful APIs</b> and with \
-                    JS frameworks (<b>AngularJS</b>, <b>AngularJS 2</b>) for the front end side with a strong knowledge of <b>HTML5</b>, \
-                    <b>CSS3</b> and <b>JavaScript</b>. Comfortable and experienced with server-side rendering and templating \
-                    with <b>Handlebars.js</b>. \
-                    <br>Good knowledge of setting up web servers with both Windows (using <b>IIS</b>) \
-                     and <b>NodeJS</b>) as well as deployment and source control mechanism such as <b>GIT</b>                    and <b>VSTS</b>. Experienced with <b>multi-instance</b> design patterns and best practices. ",
+        techSkills: "Cloud architecture expert with extensive experience across major platforms including AWS, Azure, and GCP, with deep specialization in Microsoft Azure PaaS offerings including AKS, Cloud Services, Azure Service Fabric, Azure Service Bus, Azure Redis Cache, Azure Storage. </br> \
+                        Proficient in designing and implementing multi-cloud solutions, cloud governance frameworks, and secure cloud infrastructures for both commercial and government environments. Strong background in microservices architecture and infrastructure-as-code methodologies, using technologies like .NET core, Node.js and Express for building scalable RESTful APIs. Experienced with deployment automation, CI/CD pipelines, and source control systems including GIT and Azure DevOps. </br> \
+                        Well-versed in cloud cost optimization strategies, security compliance frameworks, and multi-instance design patterns for high availability solutions. ",
         certifications: [
              {
                 name:"Microsoft Certified: Azure Solutions Architect Expert",
