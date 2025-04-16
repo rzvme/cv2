@@ -62,6 +62,11 @@ function cv() {
                 name:"Exam 70-534 - Architecting Microsoft Azure Solutions",
                 issuer:"Microsoft",
                 date:"August 2015"
+            },
+            {
+                name:"Microsoft Certified: Azure Solutions Architect Expert",
+                issuer:"Microsoft",
+                date:"November 2019"
             }
         ],
         education:[
