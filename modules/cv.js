@@ -48,6 +48,11 @@ function cv() {
                     <br>Good knowledge of setting up web servers with both Windows (using <b>IIS</b>) \
                      and <b>NodeJS</b>) as well as deployment and source control mechanism such as <b>GIT</b>                    and <b>VSTS</b>. Experienced with <b>multi-instance</b> design patterns and best practices. ",
         certifications: [
+             {
+                name:"Microsoft Certified: Azure Solutions Architect Expert",
+                issuer:"Microsoft",
+                date:"November 2019"
+            },
             {
                 name:"Exam 70-532 - Developing Microsoft Azure Infrastructure Solutions",
                 issuer:"Microsoft",
@@ -62,11 +67,6 @@ function cv() {
                 name:"Exam 70-534 - Architecting Microsoft Azure Solutions",
                 issuer:"Microsoft",
                 date:"August 2015"
-            },
-            {
-                name:"Microsoft Certified: Azure Solutions Architect Expert",
-                issuer:"Microsoft",
-                date:"November 2019"
             }
         ],
         education:[
