@@ -34,7 +34,7 @@ app.post('/action', (req, res) => {
 })
 
 app.get('/download', (req, res) => {
-    var filePath = "\\files\\Razvan_GRIGORAS_CV.pdf"
+    var filePath = "\\files\\RazvanGrigoras-CV.pdf"
     fs.readFile(__dirname + filePath, function (err, data) {
         res.contentType("application/pdf")
         res.send(data)
