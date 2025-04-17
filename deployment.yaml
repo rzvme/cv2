@@ -61,7 +61,16 @@ spec:
             name: rzvcv
             port:
               number: 80
-
+  - host: razvangrigoras.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: rzvcv
+            port:
+              number: 80
 
 ---
 apiVersion: networking.k8s.io/v1
@@ -77,8 +86,20 @@ spec:
   - hosts:
     - razvanvalentingrigoras.com
     secretName: razvanvalentingrigoras-tls
+    - razvangrigoras.com
+    secretName: razvangrigoras-tls
   rules:
   - host: razvanvalentingrigoras.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: rzvcv
+            port:
+              number: 80
+  - host: razvangrigoras.com
     http:
       paths:
       - path: /
