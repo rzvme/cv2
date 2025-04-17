@@ -45,19 +45,11 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: rzvcv-ingress
+  name: rzvcv-ingress-http
   namespace: cvrzv
   annotations:
     kubernetes.io/ingress.class: traefik
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"  # Use the issuer name from your test certificate
 spec:
-  tls:
-  - hosts:
-    - razvanvalentingrigoras.com
-    secretName: razvanvalentingrigoras-tls
-  - hosts:
-    - razvangrigoras.com
-    secretName: razvangrigoras-tls
   rules:
   - host: razvanvalentingrigoras.com
     http:
@@ -69,7 +61,24 @@ spec:
             name: rzvcv
             port:
               number: 80
-  - host: razvangrigoras.com
+
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: rzvcv-ingress-https
+  namespace: cvrzv
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"  # Use the issuer name from your test certificate
+spec:
+  tls:
+  - hosts:
+    - razvanvalentingrigoras.com
+    secretName: razvanvalentingrigoras-tls
+  rules:
+  - host: razvanvalentingrigoras.com
     http:
       paths:
       - path: /
@@ -79,3 +88,4 @@ spec:
             name: rzvcv
             port:
               number: 80
+
