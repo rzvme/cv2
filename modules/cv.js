@@ -11,7 +11,7 @@ function cv() {
                     delivering high quality results and using my skills to enact positive change.",
         experience: [
             {
-                startTime: "June 2019", endTime: "Present", jobTitle: "Cloud Architect", jobCompany: "UiPath",
+                startTime: "June 2019", endTime: "June 2025", jobTitle: "Cloud Architect", jobCompany: "UiPath",
                 jobDescription: "Spearheaded the design, development, and maintenance of UiPath Cloud Products and internal tools across multiple environments. Led initiatives to maintain and optimize existing products in major cloud marketplaces including Azure, AWS, and GCP, while successfully launching new offerings in both public and government cloud platforms. Engineered sophisticated internal tooling solutions that streamlined cloud operations, automated deployment workflows, and enhanced cross-team collaboration capabilities. Developed custom monitoring dashboards and infrastructure-as-code frameworks that significantly improved operational visibility and resource management. Played a key role in building and orchestrating the company's USGov cloud environment onboarding process, establishing secure and compliant infrastructure for federal clients. Implemented strategic projects focused on cloud governance, security enhancement, and cost optimization, resulting in improved operational efficiency and regulatory compliance."
 
             },
