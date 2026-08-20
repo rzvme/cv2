@@ -11,6 +11,11 @@ function cv() {
                     delivering high quality results and using my skills to enact positive change.",
         experience: [
             {
+                startTime: "November 2025", endTime: "Present", jobTitle: "Lead Cloud Engineer", jobCompany: "LSEG",
+                jobDescription: "Lead the maintenance, deployment, and modernization of customer-facing cloud services within LSEG's Markets and Risk Intelligence division. Drive strategic initiatives to enhance the reliability, scalability, and performance of mission-critical market data and analytics platforms serving institutional clients across global financial markets. Architect and implement cloud-native solutions that modernize legacy systems while ensuring high availability and compliance with financial services regulations. Orchestrate complex deployment pipelines and infrastructure automation frameworks that accelerate service delivery and reduce operational overhead. Collaborate closely with product engineering, security, and infrastructure teams to establish cloud best practices and governance standards tailored to the demands of real-time market intelligence applications. Spearhead the adoption of modern cloud technologies and DevOps practices, implementing containerization strategies, infrastructure-as-code methodologies, and automated monitoring solutions that improve system observability and incident response capabilities. Lead technical design reviews and provide architectural guidance for cloud migration projects, ensuring seamless transitions with minimal disruption to customer operations. Play a pivotal role in optimizing cloud resource utilization and cost management while maintaining the stringent performance and availability requirements expected in financial market infrastructure. Implement security hardening measures and compliance controls that align with industry standards and regulatory frameworks, ensuring the protection of sensitive market data and client information."
+
+            },
+            {
                 startTime: "June 2019", endTime: "June 2025", jobTitle: "Cloud Architect", jobCompany: "UiPath",
                 jobDescription: "Spearheaded the design, development, and maintenance of UiPath Cloud Products and internal tools across multiple environments. Led initiatives to maintain and optimize existing products in major cloud marketplaces including Azure, AWS, and GCP, while successfully launching new offerings in both public and government cloud platforms. Engineered sophisticated internal tooling solutions that streamlined cloud operations, automated deployment workflows, and enhanced cross-team collaboration capabilities. Developed custom monitoring dashboards and infrastructure-as-code frameworks that significantly improved operational visibility and resource management. Played a key role in building and orchestrating the company's USGov cloud environment onboarding process, establishing secure and compliant infrastructure for federal clients. Implemented strategic projects focused on cloud governance, security enhancement, and cost optimization, resulting in improved operational efficiency and regulatory compliance."
 
@@ -43,6 +48,11 @@ function cv() {
                         Proficient in designing and implementing multi-cloud solutions, cloud governance frameworks, and secure cloud infrastructures for both commercial and government environments. Strong background in microservices architecture and infrastructure-as-code methodologies, using technologies like .NET core, Node.js and Express for building scalable RESTful APIs. Experienced with deployment automation, CI/CD pipelines, and source control systems including GIT and Azure DevOps. </br> \
                         Well-versed in cloud cost optimization strategies, security compliance frameworks, and multi-instance design patterns for high availability solutions. ",
         certifications: [
+             {
+                 name: "AWS Certified Solutions Architect - Associate",
+                 issuer: "Amazon",
+                 date: "July 2026"
+             },
              {
                 name:"Microsoft Certified: Azure Solutions Architect Expert",
                 issuer:"Microsoft",
